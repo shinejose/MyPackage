@@ -16,8 +16,13 @@
 #include <bitset>
 #include <utility>
 #include <iomanip>
+// c++11 header
 #include <unordered_map>
 #include <unordered_set>
+#include <functional>
+#include <thread>
+#include <chrono>
+#include <atomic>
 using namespace std;
 
 typedef long long  ll;

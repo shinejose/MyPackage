@@ -1,0 +1,6 @@
+[Dolphin]
+SortRole=size
+Timestamp=2013,10,30,9,52,7
+Version=3
+ViewMode=1
+VisibleRoles=Details_text,Details_size,Details_date,Details_type,CustomizedDetails

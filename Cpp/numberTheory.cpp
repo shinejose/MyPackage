@@ -114,18 +114,19 @@ int gcd(int a,int b)
 /* d = ax + by = bx'+(a%b)y' = ay' + b(x'-[a/b]y')  */
 /* x = y'  */
 /* y = x' - [a/b]y' */
-int exgcd(int a,int b,int *x,int *y){
+template<Integer>
+Integer exgcd(Integer a,Integer b,Integer *x,Integer *y){
     if(b==0){
         *x = 1 ;
         *y = 0 ;
         return a;
     }
     else {
-        int d = exgcd_32(b,a%b,x,y);
-        int xpi = *x;
-        int ypi = *y;
+        Integer d = exgcd_32(b,a%b,x,y);
+        Integer xpi = *x;
+        Integer ypi = *y;
         *x = ypi;
-        *y = xpi  - (int)(a / b )  * ypi ;  
+        *y = xpi  - (Integer)(a / b )  * ypi ;  
         return d;
     }
 }
